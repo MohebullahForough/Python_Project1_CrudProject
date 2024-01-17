@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation Proj</title>
+    
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    
+    
+</head>
+<body>
+    <div class="container mt-4 ">
+        <h1 class="bg_custome_background text-white p-3 text-center ">Functional Based View and ModelForm Crud Project</h1>
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+
+    <script rel="text/javascript" src="{% static 'jquery.js' %}"></script>
+    <script rel="text/javascript" src="{% static 'popper.js' %}"></script>
+    <script rel="text/javascript" src="{% static 'all.min.js' %}"></script>
+    <script rel="text/javascript" src="{% static 'poper.js' %}"></script>
+</body>
+</html>

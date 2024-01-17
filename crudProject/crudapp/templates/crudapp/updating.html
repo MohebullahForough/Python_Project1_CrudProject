@@ -1,0 +1,15 @@
+{% extends 'crudapp/base.html' %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-8 offset-2">
+        <h1 class="bg_custome_background text-white text-center">Update Student Data</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ fmObject.as_p}}
+            <input class="btn btn-warning " type="submit" value="Update"/>
+            <a href="{% url 'homePage' %}" class="btn btn-warning ">Back to Home</a>
+        </form>
+        
+    </div>
+</div>
+{% endblock %}
